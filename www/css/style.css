@@ -1,0 +1,184 @@
+/* Empty. Add your own CSS if you like */
+  .tabs-background-jami .tabs,
+.tabs-background-jami > .tabs {
+  background-color: #00b9ac;
+  background-image: linear-gradient(0deg, #ddd, #ddd 50%, transparent 50%);
+  color: #eafffd;
+  border-color: #ddd; }
+
+.bar.bar-jami {
+    border:none;
+    background-color: #00b9ac;
+    background-image: linear-gradient(0deg, #00b9ac, #00b9ac 50%, transparent 50%);
+    color: #444; }
+    .bar.bar-jami .title {
+      color: #444; }
+    .bar.bar-jami.bar-footer {
+      background-image: linear-gradient(180deg, #00b9ac, #00b9ac 50%, transparent 50%); }
+
+  .bar-jami .button {
+  border: none;
+  background-color: #00b9ac;
+  color: black; }
+  .bar-jami .button:hover {
+    color: #ff6600;
+    text-decoration: none; }
+  .bar-jami .button.active, .bar-jami .button.activated {
+    border-color: #a2a2a2;
+    background-color: #ff6600; }
+  .bar-jami .button.button-clear {
+    border-color: transparent;
+    background: none;
+    box-shadow: none;
+    color: #444;
+    font-size: 17px; }
+  .bar-jami .button.button-icon {
+    border-color: transparent;
+    background: none; }
+
+  .tabs .tab-item .badge.badge-jami,
+.badge.badge-assertive {
+  background-color: #eb994e;
+  color: #fff; }
+
+.item-avatar-jami,
+.item-avatar-jami .item-content-jami,
+.item-avatar-left-jami,
+.item-avatar-left-jami .item-content-jami {
+  padding-left: 72px;
+  min-height: 72px; }
+  .item-avatar-jami > img:first-child,
+  .item-avatar-jami .item-image-jami,
+  .item-avatar-jami .item-content-jami > img:first-child,
+  .item-avatar-jami .item-content-jami .item-image-jami,
+  .item-avatar-left-jami > img:first-child,
+  .item-avatar-left-jami .item-image-jami,
+  .item-avatar-left-jami .item-content-jami > img:first-child,
+  .item-avatar-left-jami .item-content-jami .item-image-jami {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    max-width: 70px;
+    max-height: 70px;
+    width: 150%;
+    height: 150%;
+    border-radius: 50%; }
+
+.item-avatar-right-jami,
+.item-avatar-right-jami .item-content-jami {
+  padding-right: 72px;
+  min-height: 72px; }
+  .item-avatar-right-jami > img:first-child,
+  .item-avatar-right-jami .item-image-jami,
+  .item-avatar-right-jami .item-content-jami > img:first-child,
+  .item-avatar-right-jami .item-content-jami .item-image-jami {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    max-width: 40px;
+    max-height: 40px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; }  
+
+
+.checkbox-jami {
+  position: relative;
+  display: inline-block;
+  padding: 7px 7px;
+  cursor: pointer; }
+  .ion-android-star-outline input:before,
+  .ion-android-star-outline .ion-android-star:before {
+    border-color: #ddd; }
+  .ion-android-star-outline input:checked:before,
+  .ion-android-star-outline input:checked + .ion-android-star:before {
+    background: #387ef5;
+    border-color: #387ef5; }
+
+
+.slider-jami {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background: #00726a;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    pointer-events: none;
+}
+
+.slider-jami:hover {
+    opacity: 1;
+}
+
+.slider-jami::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 10px;
+    width: 15px;
+    height: 15px;
+    background: #eb994e;
+    cursor: pointer;
+}
+
+textarea.postTextarea {
+  padding-left: 0; }
+  textarea::-moz-placeholder {
+    color: #5b5b5b; }
+  textarea:-ms-input-placeholder {
+    color: #5b5b5b; }
+  textarea::-webkit-input-placeholder {
+    color: #5b5b5b;
+    text-indent: 0px; }
+
+.platform-ios .addAvis{
+	position: absolute;
+	right: 20px;
+	bottom: 70px;
+	box-shadow: -3px 5px 4px rgba(0, 0, 0, 0.3)
+}
+
+.platform-android .addAvis, .addAvis{
+	position: absolute;
+    right: 20px;
+	bottom: 20px;
+	box-shadow: -3px 5px 4px rgba(0, 0, 0, 0.3)
+}
+
+.avisCard{
+	top: 100px;
+	
+}
+
+.platform-ios .avisCard{
+	top:100px;
+	
+}
+
+.platform-android .avisCard{
+	top:50px;
+	
+}
+
+.platform-ios .conversations{
+	padding-bottom: 70px;
+	
+}
+
+.platform-android .conversations{
+	padding-bottom: 100px;
+	
+}
+
+.postPopover{
+	margin-top: -35px;margin-bottom: -35px;
+	
+}
+
+.platform-android .postPopover{
+	margin-top: -80px;
+	
+}
+ 

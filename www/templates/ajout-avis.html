@@ -1,0 +1,63 @@
+<ion-view view-title = "Passer un nouvel avis" >
+
+
+	<ion-content style="z-index: -17;">
+
+		<ion-header class="title" style="
+		padding:20px;
+		display:flex;
+		flex-direction:row;
+		background-color:#00b9ac;
+		width:100%;
+		height:150px;
+		z-inex:17;
+		justify-content:space-betwen;
+		align-items:center;
+		border-bottom: 1.9px solid #00d6c7
+		position:relative;
+		top:200px;
+		border-bottom: 2.0px solid #00d6c7">
+    	<!--<button class="button button-icon icon ion-ios-arrow-back" ui-sref="tab-avis" style="color:#FFFFFF;padding-top:10px;"></button>-->
+    	<ion-avatar class="item-avatar-jami"  style="
+    		position:relative;left:-12px;
+    		">
+        	<img src="https://s3.amazonaws.com/ionic-io-static/vGm2no9pS2SYxdyT9CCw_boy3.jpg">
+    	</ion-avatar>
+    	<div style="display: flex; flex-direction: column;">
+    		<label class="padding-left padding-bottom" style="" >
+        		Raymond chow
+    		</label>
+    		<label class="padding-left">
+    			achet
+    		</label>
+    		<label class="padding-left">
+    			achet
+    		</label>
+    	</div>
+    	<button class="button button-icon icon ion-android-more-vertical" ui-sref="#" style="position:absolute;right:0px;color:#FFFFFF;padding-top:15px;padding-right:15px;"></button>
+	</ion-header>
+
+		<div class="list card manual-card-fullwidth">
+      
+      		<form class="list">
+       		<label class="item item-input MonCommerce" name="DetailCommerce" style="position:relative;height:150px;">
+          		<textarea placeholder="Identifie ton produit" style="height:100%;width:100%;padding:10px;"></textarea>
+          	</label>
+        	<div class="spacer" style="width: 319.9999694824219px; height: 21.99999237060547px;"></div>
+        	<ion-slides hidden disable-side-menu-drag="" options="{'loop': true}" slider="slider1" delegate-handle=		"slider1" style="width:100%;height:250px;" class="SliderPhotoVideo">
+          				<ion-slide-page></ion-slide-page>
+        	</ion-slides>
+       		<ion-list>
+          		<ion-item class="item-icon-left positive" href="">
+            		<i class="icon ion-android-camera"></i>Prendre une photo/video</ion-item>
+          		<ion-item class="item-icon-left balanced" href="">
+            		<i class="icon ion-images"></i>Ajouter photo/video</ion-item>
+          		<ion-item class="item-icon-left assertive" href="">
+            		<i class="icon ion-compose"></i>Poster</ion-item>
+        	</ion-list>
+        	<div class="spacer" style="width: 319.9999694824219px; height: 19.99999237060547px;"></div>
+      		</form>
+    	</div>
+	</ion-content>
+	
+</ion-view>

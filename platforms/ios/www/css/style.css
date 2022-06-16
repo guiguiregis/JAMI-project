@@ -1,0 +1,41 @@
+/* Empty. Add your own CSS if you like */
+  .tabs-background-jami .tabs,
+.tabs-background-jami > .tabs {
+  background-color: #00b9ac;
+  background-image: linear-gradient(0deg, #ddd, #ddd 50%, transparent 50%);
+  border-color: #ddd; }
+
+.bar.bar-jami {
+    border:none;
+    background-color: #00b9ac;
+    background-image: linear-gradient(0deg, #00b9ac, #00b9ac 50%, transparent 50%);
+    color: #444; }
+    .bar.bar-jami .title {
+      color: #444; }
+    .bar.bar-jami.bar-footer {
+      background-image: linear-gradient(180deg, #00b9ac, #00b9ac 50%, transparent 50%); }
+
+  .bar-jami .button {
+  border: none;
+  background-color: #00b9ac;
+  color: black; }
+  .bar-jami .button:hover {
+    color: #ff6600;
+    text-decoration: none; }
+  .bar-jami .button.active, .bar-jami .button.activated {
+    border-color: #a2a2a2;
+    background-color: #ff6600; }
+  .bar-jami .button.button-clear {
+    border-color: transparent;
+    background: none;
+    box-shadow: none;
+    color: #444;
+    font-size: 17px; }
+  .bar-jami .button.button-icon {
+    border-color: transparent;
+    background: none; }
+
+  .tabs .tab-item .badge.badge-jami,
+.badge.badge-assertive {
+  background-color: #eb994e;
+  color: #fff; }

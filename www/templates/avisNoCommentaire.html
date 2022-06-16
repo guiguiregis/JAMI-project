@@ -1,0 +1,163 @@
+<ion-view title="Nom de l'avis">
+	<ion-header class="title hasHeader" style="
+		padding:20px;
+		display:flex;
+		flex-direction:row;
+		background-color:#00b9ac;
+		width:100%;
+		height:150px;
+		z-inex:17;
+		justify-content:space-betwen;
+		align-items:center;
+		border-bottom: 1.9px solid #00d6c7">
+    	<ion-avatar class="item-avatar-jami"  style="
+    		position:relative;left:-12px;
+    		">
+        	<img src="https://s3.amazonaws.com/ionic-io-static/vGm2no9pS2SYxdyT9CCw_boy3.jpg">
+    	</ion-avatar>
+
+    	<div style="display: flex; flex-direction: column;">
+    		<label class="padding-left padding-bottom" style="color:#fff; font-weight: bold; overflow: hidden;" >
+        		Nom de l'annonceur
+    		</label>
+    		<label class="padding-left">
+    			text 1
+    		</label>
+    		<label class="padding-left">
+    			text 2
+    		</label>
+    	</div>
+    	<button class="button button-icon icon ion-android-more-vertical" href="#/tab/notifications" style="position:absolute;right:0px;color:#FFFFFF;padding-top:15px;padding-right:15px;">  
+        </button>
+	</ion-header>
+
+
+    <span class="popover-backdrop active" style="display: none">
+        <ion-popover-view class="popover">
+            <ion-content class="postPopover">
+                <ion-list>
+                    <ion-item>2</ion-item>
+                    <ion-item>2</ion-item>
+                    <ion-item>2</ion-item>
+                    <ion-item>2</ion-item>
+                    <ion-item>2</ion-item>
+                    <ion-item>2</ion-item>
+                    <ion-item>2</ion-item>
+                    <ion-item>2</ion-item>
+                </ion-list>
+            </ion-content>
+        </ion-popover-view>
+    </span>
+
+    <ion-content padding="false" style="z-index: -17; background-color:#ddfffc;">
+		<ion-card class="avisCard list card item">
+
+  			<ion-card-header  style="display: flex;flex-direction: column;align-items: baseline;">
+
+  				<ion-checkbox id="thisCheckId" onclick="Check()" style="width: 100px;border: none; opacity: 0;margin: 4px;">
+  				</ion-checkbox>
+
+  				<button id="thisBookmarkId" class="button button button-icon icon ion-ios-bookmarks-outline" style="color:#01635c;font-size: 0.8em;position: absolute; left:0px;top: 0;margin: 4px;">
+  					<span style="margin: 4px;color:#01635c;">Suivre</span>
+  				</button>
+
+  				<span style="display: flex; flex-direction: row-reverse;align-items: flex-end;">
+        			<label style="color:#01635c;font-size: 0.6em; padding-left: 10px;margin-top: 10px;">
+        				Aujourd'hui à 13:20
+        			</label>
+        		</span>
+
+        		 <button side="right" class="button button-icon icon ion-android-more-horizontal" style="position: absolute;right:0px;top: 0;margin-right: 10px;" onclick="" ng-click="">   
+                 </button>
+
+  			</ion-card-header>
+
+  			<ion-card-content>
+    			<ion-list>
+
+    				<ion-item class="AvisPost">
+                        <div style="max-height: 230px; overflow-y: hidden;">
+                            <p style="white-space: normal;
+                            padding-bottom: 30px;
+                            display: flex;
+                            flex-direction: column;
+                            text-align: left;
+                            color: black">
+                            Il s'agit d'un template sans commentaire
+                            
+                        </p>
+                        </div>
+    				</ion-item>
+    				
+    				<div class="slidePhoto" style="display: none;">
+    					<ion-slides disable-side-menu-drag="" options="{'loop': true}" slider="slider1"				delegate-handle="slider1" style="width:100%;height:300px; visibility: visible;">
+  							<ion-slide-page style="background:url(&quot;https://s3.amazonaws.com/ionic-io-static/JjjPbvahTQbXTS5lLfh4_fruit.jpg&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+  							<ion-slide-page style="background:url(&quot;https://s3.amazonaws.com/ionic-io-static/lTNaey6aQlGfbGsat1e6_verger.jpg&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+  							<ion-slide-page style="background:url(&quot;https://s3.amazonaws.com/ionic-io-static/NDNpno9HQDe6ZZcWgozH_fruit1.jpg&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+						</ion-slides>
+    				</div>
+
+    				<div class="conversations" style="background-color:#ddfffc;padding-top: 20px;">
+
+        				<ion-item id="" class="item bubleExterne" style="display: none; padding-bottom: 5px;padding-top: 5px; border:none; background: rgba(76, 175, 80, 0);">
+                            <label style="text-align: center; padding: 20px;">soyez le premier à rediger un commentaire!</label>
+                        </ion-item>
+
+    				</div>
+    			</ion-list>
+  			</ion-card-content>
+
+
+
+		</ion-card>
+	</ion-content>
+
+	<ion-footer style="
+	display:flex;
+	flex-direction:column;
+	background-color:#e8fffc;/**00b9ac**/
+	width:100%;
+	resize: inherit;
+	height: 90px;
+	max-height: 250px;
+	padding:10px;
+	position:absolute;
+	bottom:0;
+	color: black;
+	z-inex:17
+	box-shadow:2px 4px 2px rgba(0, 0, 0, 0.3);
+	border-top: 1.9px solid #00d6c7">
+  		<div style="
+          display:flex;
+          flex-direction:row;
+          width:100%;
+          height: 100%;
+          resize: inherit;
+          align-items:center;">
+        
+            <textarea class="postTextarea" placeholder="Saisir un message" style="
+            resize:none ;
+            padding-left:15px;
+            padding-top:9px;
+            background: rgba(76, 175, 80, 0);
+            width:100%;
+            height: auto;
+            justify-content:space-betwen;
+            align-items: flex-start;
+            "></textarea>
+            
+        </div>
+
+        <div class="button-bar" style="height: 100%;align-items: baseline; display: flex;flex-direction: row;
+        ">
+        	<button style="color:#444; padding: 0px;" class="button button button-icon icon ion-camera"></button>
+
+            <button style="color:#444; padding: 0px;" class="button button button-icon icon ion-android-attach"></button>
+
+            <button style="color:#444;  padding: 0px;" class="button button button-icon icon ion-android-microphone"></button>
+
+            <button style="color:#444;  padding: 0px;" class="button button-positive button-icon icon ion-android-send"></button>
+        </div>
+    </ion-footer>
+
+</ion-view>

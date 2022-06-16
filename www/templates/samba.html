@@ -1,0 +1,615 @@
+<ion-view view-title = "Samba">
+
+	<ion-header class="title hasHeader" style="
+        padding:20px;
+        display:flex;
+        flex-direction:row;
+        background-color:#00b9ac;
+        width:100%;
+        height:150px;
+        z-inex:17;
+        justify-content:space-betwen;
+        align-items:center;
+        border-bottom: 1.9px solid #00d6c7">
+        <ion-avatar class="item-avatar-jami"  style="
+            position:relative;left:-12px;
+            ">
+            <img src="https://s3.amazonaws.com/ionic-io-static/vGm2no9pS2SYxdyT9CCw_boy3.jpg">
+        </ion-avatar>
+
+        <div style="display: flex; flex-direction: column;">
+            <label class="padding-left padding-bottom" style="color:#fff; font-weight: bold; overflow: hidden;" >
+                Nom de l'annonceur
+            </label>
+            <label class="padding-left">
+                text 1
+            </label>
+            <label class="padding-left">
+                text 2
+            </label>
+        </div>
+        <button class="button button-icon icon ion-android-more-vertical" href="#/tab/notifications" style="position:absolute;right:0px;color:#FFFFFF;padding-top:15px;padding-right:15px;">  
+        </button>
+    </ion-header>
+
+
+    <span class="popover-backdrop active" style="display: none">
+        <ion-popover-view class="popover">
+            <ion-content class="postPopover">
+                <ion-list>
+                    <ion-item>2</ion-item>
+                    <ion-item>2</ion-item>
+                    <ion-item>2</ion-item>
+                    <ion-item>2</ion-item>
+                    <ion-item>2</ion-item>
+                    <ion-item>2</ion-item>
+                    <ion-item>2</ion-item>
+                    <ion-item>2</ion-item>
+                </ion-list>
+            </ion-content>
+        </ion-popover-view>
+    </span>
+	
+	<ion-content padding="false" style="z-index: -17; background-color:#ddfffc;">
+		<ion-card class="avisCard list card item">
+
+  			<ion-card-header  style="display: flex;flex-direction: column;align-items: baseline;">
+
+  				<ion-checkbox id="thisCheckId" onclick="Check()" style="width: 100px;border: none; opacity: 0;margin: 4px;">
+  				</ion-checkbox>
+
+  				<button id="thisBookmarkId" class="button button button-icon icon ion-ios-bookmarks-outline" style="color:#01635c;font-size: 0.8em;position: absolute; left:0px;top: 0;margin: 4px;">
+  					<span style="margin: 4px;color:#01635c;">Suivre</span>
+  				</button>
+
+  				<span style="display: flex; flex-direction: row-reverse;align-items: flex-end;">
+        			<label style="color:#01635c;font-size: 0.6em; padding-left: 10px;margin-top: 10px;">
+        				Aujourd'hui à 13:20
+        			</label>
+        		</span>
+
+        		 <button side="right" class="button button-icon icon ion-android-more-horizontal" style="position: absolute;right:0px;top: 0;margin-right: 10px;" onclick="" ng-click="">   
+                 </button>
+
+  			</ion-card-header>
+
+  			<ion-card-content>
+    			<ion-list>
+    				<ion-item class="AvisPost">
+                        <div style="height: 230px; overflow-y: hidden;">
+                            <p style="white-space: normal;
+                            padding-bottom: 30px;
+                            display: flex;
+                            flex-direction: column;
+                            text-align: left;
+                            color: black">
+                            Avis vide Lorem avec poste et photo, 5 commentaires et le tag "suivre" visible en haut a gauche Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            
+                        </p>
+                        </div>
+    				</ion-item>
+
+    				<div class="slidePhoto" style="">
+    					<ion-slides disable-side-menu-drag="" options="{'loop': true}" slider="slider1"				delegate-handle="slider1" style="width:100%;height:300px;">
+  							<ion-slide-page style="background:url(&quot;https://s3.amazonaws.com/ionic-io-static/JjjPbvahTQbXTS5lLfh4_fruit.jpg&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+  							<ion-slide-page style="background:url(&quot;https://s3.amazonaws.com/ionic-io-static/lTNaey6aQlGfbGsat1e6_verger.jpg&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+  							<ion-slide-page style="background:url(&quot;https://s3.amazonaws.com/ionic-io-static/NDNpno9HQDe6ZZcWgozH_fruit1.jpg&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+						</ion-slides>
+    				</div>
+
+    				<div class="conversations" style="background-color:#ddfffc;padding-top: 20px;">
+
+        				<ion-item id="" class="item bubleExterne" style="padding-bottom: 5px;padding-top: 5px; border:none; background: rgba(76, 175, 80, 0);">
+        					<div style="display: flex;
+        					flex-direction: row;">
+        							<p class="item-avatar-left bubble" style="
+        							white-space:normal;
+        							display: flex;flex-direction: column;
+        							padding-right: 5px;
+        							background-color:#d0f2ef;
+        							color: black;
+        							border-radius:0px 5px 5px;
+        							max-width: 90%;
+        							min-width: 120px;
+        							min-height: 85px;
+        							align-items: flex-end;
+        							box-shadow:0 1px 2px rgba(0, 0, 0, 0.3);">
+
+        								<img src="https://s3.amazonaws.com/ionic-io-static/dEuswy2RdizQEthG05QI_boy1.jpg" style="
+        								margin-top: 34px;
+        								margin-bottom: 34px;
+        								margin-left: 15px;">
+        							
+        								<ion-label style="overflow: hidden; width: 50%; white-space: nowrap;color:#01635c;font-size: 1.3em; padding: 2px;position: absolute;left: 0px;margin-left: 25px;
+                                            font-weight: bold; ">
+        								Name
+        								</ion-label>
+
+        								<span style="display: flex; flex-direction: row-reverse; margin-top: -10px;">
+        										<button class="button button-icon ion-chevron-right icon-accessory" style="
+       										visibility: visible; "></button>	
+        								</span>
+
+        								<span class="bubbleMessage" style="display: none; padding-top: 2px; padding-right: 15px;" >
+        									Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+        								</span>
+
+        								<span class="messageAudio" style="
+        								display:inline-flex;
+        								flex-direction:row;
+        								height: 50px;
+        								align-items: baseline;">
+        									<button class="button button button-icon icon ion-play"></button> <!-- remplacer "play" par "pause"-->
+        									<span class="" style="width: 65%;margin:5px;position: relative;bottom: 4px;">
+  												<input class="slider-jami range-bar-active" type="range" value="0" min="0" max="100" step="1">
+											</span>
+											<span class="audioTime" style="display: inline-flex; flex-direction: row-reverse;">
+        										<label style="color:#01635c;font-size: 0.8em; padding: 1px;margin-bottom: 10px;"> 1:20</label>
+        									</span>
+        								</span>
+
+        								<span class="item messagePhoto" style="
+        								width: 200px;
+        								height: 50px;
+        								overflow-x: hidden;
+        								border-radius:5px 5px 5px 5px;
+        								border: none;
+        								display:none;
+        								flex-direction:row;
+        								background-color: #39a8a0;
+        								padding: 5px;">
+        									<img src="https://s3.amazonaws.com/ionic-io-static/71zRYsmAS12Ope2I49KK_panneau0.gif" style="
+        									margin: 2px;
+        									background-color: white;
+        									display: block;
+        									width: 30%;
+        									height: 100%;">
+
+  											<img src="https://s3.amazonaws.com/ionic-io-static/GNwpDt7eTt2lt1x3GEvw_panneau1.jpg" style="margin: 2px;
+        									background-color: white;
+        									display: block;
+        									width: 30%;
+        									height: 100%;">
+
+        									<img src="https://s3.amazonaws.com/ionic-io-static/GNwpDt7eTt2lt1x3GEvw_panneau1.jpg" style="margin: 2px;
+        									background-color: white;
+        									display: block;
+        									width: 30%;
+        									height: 100%;">
+        									
+        									<img src="https://s3.amazonaws.com/ionic-io-static/GNwpDt7eTt2lt1x3GEvw_panneau1.jpg" style="margin: 2px;
+        									background-color: white;
+        									display: block;
+        									width: 30%;
+        									height: 100%;">
+        								</span>
+
+        								<span style="display: flex; flex-direction: row-reverse;">
+        									<label style="color:#01635c;font-size: 0.8em; padding: 2px;margin-bottom: 10px;"> 12/12/12 13:20</label>
+        								</span>
+        								
+        							</p>
+        							
+        					</div>
+        				</ion-item>
+
+        				<ion-item id="" class="item bubleProprio" style="padding-left:25px; padding-bottom: 5px;padding-top: 5px;border:none; background: rgba(76, 175, 80, 0);">
+        					<div style="display: flex;
+        					flex-direction: row;">
+        							<p class="bubble" style="
+        							white-space:normal;
+        							display: flex;flex-direction: column;
+        							padding-left: 15px;
+        							padding-top: 15px;
+        							padding-right: 5px;
+        							background-color:#effffd;
+        							color: black;
+        							border-radius:0px 5px 5px;
+        							max-width: 90%;
+        							min-width: 120px;
+        							min-height: 85px;
+        							align-items: flex-end;
+        							box-shadow:0 1px 2px rgba(0, 0, 0, 0.3);">
+
+                                        <ion-label style="overflow: hidden; width: 90%; white-space: nowrap; color:#01635c;font-size: 1.3em; padding: 2px;
+                                            display: inline-flex;
+                                            font-weight: bold;">
+                                           Raymond Chow wdkwvkwbe
+                                        </ion-label>
+
+        								<span class="bubbleMessage" style="display: inline-flex; padding-top: 2px; padding-right: 5px;" >
+        									Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        								</span>
+
+        								<span class="messageAudio" style="
+        								display:none; /*display:inline-flex;*/
+        								flex-direction:row;
+        								height: 50px;
+        								width: 100%;
+        								margin-right: 10px;
+        								align-items: baseline;">
+        									<button class="button button button-icon icon ion-play"></button>
+        									<span class="" style="width: 65%;margin:5px;position: relative;bottom: 4px;">
+  												<input class="slider-jami range-bar-active" type="range" value="0" min="0" max="100" step="1">
+											</span>
+											<span class="audioTime" style="display: flex; flex-direction: row-reverse;">
+        										<label style="color:#01635c;font-size: 0.8em; padding: 1px;margin-bottom: 10px;"> 1:20</label>
+        									</span>
+        								</span>
+
+        								<span class="item messagePhoto" style="
+        								width: 200px;
+        								height: 50px;
+        								overflow-x: hidden;
+        								border-radius:5px 5px 5px 5px;
+        								border: none;
+        								display:none;
+        								flex-direction:row;
+        								background-color: #39a8a0;
+        								padding: 5px;
+        								margin:10px;">
+        									<img src="https://s3.amazonaws.com/ionic-io-static/71zRYsmAS12Ope2I49KK_panneau0.gif" style="
+        									margin: 2px;
+        									background-color: white;
+        									display: block;
+        									width: 30%;
+        									height: 100%;">
+
+  											<img src="https://s3.amazonaws.com/ionic-io-static/GNwpDt7eTt2lt1x3GEvw_panneau1.jpg" style="margin: 2px;
+        									background-color: white;
+        									display: block;
+        									width: 30%;
+        									height: 100%;">
+
+        									<img src="https://s3.amazonaws.com/ionic-io-static/GNwpDt7eTt2lt1x3GEvw_panneau1.jpg" style="margin: 2px;
+        									background-color: white;
+        									display: block;
+        									width: 30%;
+        									height: 100%;">
+        									
+        									<img src="https://s3.amazonaws.com/ionic-io-static/GNwpDt7eTt2lt1x3GEvw_panneau1.jpg" style="margin: 2px;
+        									background-color: white;
+        									display: block;
+        									width: 30%;
+        									height: 100%;">
+        								</span>
+
+        								<span style="display: flex; flex-direction: row-reverse;">
+        									<label style="color:#01635c;font-size: 0.8em; padding: 2px;margin-bottom: 3px;"> 12/12/12 13:20</label>
+        								</span>
+        								
+        							</p>
+        							
+        					</div>
+        				</ion-item>
+
+                        <ion-item id="" class="item bubleExterne" style="padding-bottom: 5px;padding-top: 5px; border:none; background: rgba(76, 175, 80, 0);">
+                            <div style="display: flex;
+                            flex-direction: row;">
+                                    <p class="item-avatar-left bubble" style="
+                                    white-space:normal;
+                                    display: flex;flex-direction: column;
+                                    padding-right: 5px;
+                                    background-color:#d0f2ef;
+                                    color: black;
+                                    border-radius:0px 5px 5px;
+                                    max-width: 90%;
+                                    min-width: 120px;
+                                    min-height: 85px;
+                                    align-items: flex-end;
+                                    box-shadow:0 1px 2px rgba(0, 0, 0, 0.3);">
+
+                                        <img src="https://s3.amazonaws.com/ionic-io-static/dEuswy2RdizQEthG05QI_boy1.jpg" style="
+                                        margin-top: 34px;
+                                        margin-bottom: 34px;
+                                        margin-left: 15px;">
+                                    
+                                        <ion-label style="overflow: hidden; width: 50%; white-space: nowrap;color:#01635c;font-size: 1.3em; padding: 2px;position: absolute;left: 0px;margin-left: 25px;
+                                            font-weight: bold; ">
+                                        Name
+                                        </ion-label>
+
+                                        <span style="display: flex; flex-direction: row-reverse; margin-top: -10px;">
+                                                <button class="button button-icon ion-chevron-right icon-accessory" style="
+                                            visibility: visible; "></button>    
+                                        </span>
+
+                                        <span class="bubbleMessage" style="
+                                        display: inline-flex;
+                                        padding-top: 2px; padding-right: 15px;" >
+                                            Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+                                        </span>
+
+                                        <span class="messageAudio" style="
+                                        display:none;
+                                        flex-direction:row;
+                                        height: 50px;
+                                        align-items: baseline;">
+                                            <button class="button button button-icon icon ion-play"></button> <!-- remplacer "play" par "pause"-->
+                                            <span class="" style="width: 65%;margin:5px;position: relative;bottom: 4px;">
+                                                <input class="slider-jami range-bar-active" type="range" value="0" min="0" max="100" step="1">
+                                            </span>
+                                            <span class="audioTime" style="display: inline-flex; flex-direction: row-reverse;">
+                                                <label style="color:#01635c;font-size: 0.8em; padding: 1px;margin-bottom: 10px;"> 1:20</label>
+                                            </span>
+                                        </span>
+
+                                        <span class="item messagePhoto" style="
+                                        width: 200px;
+                                        height: 50px;
+                                        overflow-x: hidden;
+                                        border-radius:5px 5px 5px 5px;
+                                        border: none;
+                                        display:none;
+                                        flex-direction:row;
+                                        background-color: #39a8a0;
+                                        padding: 5px;">
+                                            <img src="https://s3.amazonaws.com/ionic-io-static/71zRYsmAS12Ope2I49KK_panneau0.gif" style="
+                                            margin: 2px;
+                                            background-color: white;
+                                            display: block;
+                                            width: 30%;
+                                            height: 100%;">
+
+                                            <img src="https://s3.amazonaws.com/ionic-io-static/GNwpDt7eTt2lt1x3GEvw_panneau1.jpg" style="margin: 2px;
+                                            background-color: white;
+                                            display: block;
+                                            width: 30%;
+                                            height: 100%;">
+
+                                            <img src="https://s3.amazonaws.com/ionic-io-static/GNwpDt7eTt2lt1x3GEvw_panneau1.jpg" style="margin: 2px;
+                                            background-color: white;
+                                            display: block;
+                                            width: 30%;
+                                            height: 100%;">
+                                            
+                                            <img src="https://s3.amazonaws.com/ionic-io-static/GNwpDt7eTt2lt1x3GEvw_panneau1.jpg" style="margin: 2px;
+                                            background-color: white;
+                                            display: block;
+                                            width: 30%;
+                                            height: 100%;">
+                                        </span>
+
+                                        <span style="display: flex; flex-direction: row-reverse;">
+                                            <label style="color:#01635c;font-size: 0.8em; padding: 2px;margin-bottom: 10px;"> 12/12/12 13:20</label>
+                                        </span>
+                                        
+                                    </p>
+                                    
+                            </div>
+                        </ion-item>
+
+        				<ion-item id="" class="item bubleUtilisateur" style="padding-bottom: 5px;padding-top: 5px;border:none; background: rgba(76, 175, 80, 0);">
+        					<div style="display: flex;
+        					flex-direction: row-reverse;">
+        							<p class="bubble" style="
+        							white-space:normal;
+        							display: flex;flex-direction: column;
+        							padding-left: 15px;
+        							padding-top: 15px;
+        							background-color:#d3d3d3;
+        							color: black;
+        							border-radius:5px 0px 5px 5px;
+        							max-width: 90%;
+        							min-width: 120px;
+        							min-height: 85px;
+        							align-items: flex-end;
+        							position: relative;
+        							box-shadow:0 1px 2px rgba(0, 0, 0, 0.3);">
+
+        								<span class="bubbleMessage" style="display: none; padding-top: -12px; padding-right: 15px;" >
+        									Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        									
+        								</span>
+
+        								<span class="messageAudio" style="
+        								display:none;/*remplacer par inine-flex*/
+        								flex-direction:row;
+        								height: 50px;
+        								width: 100%;
+        								margin-right: 10px;
+        								align-items: baseline;">
+        									<button class="button button button-icon icon ion-play"></button>
+        									<span class="" style="width: 65%;margin:5px;position: relative;bottom: 4px;">
+  												<input class="slider-jami range-bar-active" type="range" value="0" min="0" max="100" step="1">
+											</span>
+											<span class="audioTime" style="display: flex; flex-direction: row-reverse;">
+        										<label style="color:#01635c;font-size: 0.8em; padding: 1px;margin-bottom: 10px;"> 1:20</label>
+        									</span>
+        								</span>
+
+        								<span class="item messagePhoto" style="
+                                        display:inline-flex;
+        								width: 200px;
+        								height: 50px;
+        								overflow-x: hidden;
+        								border-radius:5px 5px 5px 5px;
+        								border: none;
+        								flex-direction:row;
+        								background-color: #39a8a0;
+        								padding: 5px;
+        								margin:10px;">
+        									<img src="https://s3.amazonaws.com/ionic-io-static/71zRYsmAS12Ope2I49KK_panneau0.gif" style="
+        									margin: 2px;
+        									background-color: white;
+        									display: block;
+        									width: 30%;
+        									height: 100%;">
+
+  											<img src="https://s3.amazonaws.com/ionic-io-static/GNwpDt7eTt2lt1x3GEvw_panneau1.jpg" style="margin: 2px;
+        									background-color: white;
+        									display: block;
+        									width: 30%;
+        									height: 100%;">
+
+        									<img src="https://s3.amazonaws.com/ionic-io-static/GNwpDt7eTt2lt1x3GEvw_panneau1.jpg" style="margin: 2px;
+        									background-color: white;
+        									display: block;
+        									width: 30%;
+        									height: 100%;">
+        									
+        									<img src="https://s3.amazonaws.com/ionic-io-static/GNwpDt7eTt2lt1x3GEvw_panneau1.jpg" style="margin: 2px;
+        									background-color: white;
+        									display: block;
+        									width: 30%;
+        									height: 100%;">
+        								</span>
+
+        								<span style="display: flex; flex-direction: row-reverse;">
+        									<label style="color:#01635c;font-size: 0.8em; padding: 4px;margin-bottom: 3px;"> 12/12/12 13:20</label>
+        								</span>
+        								
+        							</p>
+        							
+        					</div>
+        				</ion-item>
+
+                        <ion-item id="" class="item bubleUtilisateur" style="padding-bottom: 5px;padding-top: 5px;border:none; background: rgba(76, 175, 80, 0);">
+                            <div style="display: flex;
+                            flex-direction: row-reverse;">
+                                    <p class="bubble" style="
+                                    white-space:normal;
+                                    display: flex;flex-direction: column;
+                                    padding-left: 15px;
+                                    padding-top: 15px;
+                                    background-color:#d3d3d3;
+                                    color: black;
+                                    border-radius:5px 0px 5px 5px;
+                                    max-width: 90%;
+                                    min-width: 120px;
+                                    min-height: 85px;
+                                    align-items: flex-end;
+                                    position: relative;
+                                    box-shadow:0 1px 2px rgba(0, 0, 0, 0.3);">
+
+                                        <span class="bubbleMessage" style="display: none; padding-top: -12px; padding-right: 15px;" >
+                                            Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            
+                                        </span>
+
+                                        <span class="messageAudio" style="
+                                        display:inline-flex;/*remplacer par none*/
+                                        flex-direction:row;
+                                        height: 50px;
+                                        width: 100%;
+                                        margin-right: 10px;
+                                        align-items: baseline;">
+                                            <button class="button button button-icon icon ion-pause"></button>
+                                            <span class="" style="width: 65%;margin:5px;position: relative;bottom: 4px;">
+                                                <input class="slider-jami range-bar-active" type="range" value="30" min="0" max="100" step="1">
+                                            </span>
+                                            <span class="audioTime" style="display: flex; flex-direction: row-reverse;">
+                                                <label style="color:#01635c;font-size: 0.8em; padding: 1px;margin-bottom: 10px;"> 1:20</label>
+                                            </span>
+                                        </span>
+
+                                        <span class="item messagePhoto" style="
+                                        display:none;
+                                        width: 200px;
+                                        height: 50px;
+                                        overflow-x: hidden;
+                                        border-radius:5px 5px 5px 5px;
+                                        border: none;
+                                        flex-direction:row;
+                                        background-color: #39a8a0;
+                                        padding: 5px;
+                                        margin:10px;">
+                                            <img src="https://s3.amazonaws.com/ionic-io-static/71zRYsmAS12Ope2I49KK_panneau0.gif" style="
+                                            margin: 2px;
+                                            background-color: white;
+                                            display: block;
+                                            width: 30%;
+                                            height: 100%;">
+
+                                            <img src="https://s3.amazonaws.com/ionic-io-static/GNwpDt7eTt2lt1x3GEvw_panneau1.jpg" style="margin: 2px;
+                                            background-color: white;
+                                            display: block;
+                                            width: 30%;
+                                            height: 100%;">
+
+                                            <img src="https://s3.amazonaws.com/ionic-io-static/GNwpDt7eTt2lt1x3GEvw_panneau1.jpg" style="margin: 2px;
+                                            background-color: white;
+                                            display: block;
+                                            width: 30%;
+                                            height: 100%;">
+                                            
+                                            <img src="https://s3.amazonaws.com/ionic-io-static/GNwpDt7eTt2lt1x3GEvw_panneau1.jpg" style="margin: 2px;
+                                            background-color: white;
+                                            display: block;
+                                            width: 30%;
+                                            height: 100%;">
+                                        </span>
+
+                                        <span style="display: flex; flex-direction: row-reverse;">
+                                            <label style="color:#01635c;font-size: 0.8em; padding: 4px;margin-bottom: 3px;"> 12/12/12 13:20</label>
+                                        </span>
+                                        
+                                    </p>
+                                    
+                            </div>
+                        </ion-item>
+
+    				</div>
+    			</ion-list>
+  			</ion-card-content>
+
+
+
+		</ion-card>
+	</ion-content>
+
+	<ion-footer style="
+	display:flex;
+	flex-direction:column;
+	background-color:#e8fffc;/**00b9ac**/
+	width:100%;
+	resize: inherit;
+	height: 90px;
+	max-height: 250px;
+	padding:10px;
+	position:absolute;
+	bottom:0;
+	color: black;
+	z-inex:17
+	box-shadow:2px 4px 2px rgba(0, 0, 0, 0.3);
+	border-top: 1.9px solid #00d6c7">
+  		<div style="
+          display:flex;
+          flex-direction:row;
+          width:100%;
+          height: 100%;
+          resize: inherit;
+          align-items:center;">
+        
+            <textarea class="postTextarea" placeholder="Saisir un message" style="
+            resize:none ;
+            padding-left:15px;
+            padding-top:9px;
+            background: rgba(76, 175, 80, 0);
+            width:100%;
+            height: auto;
+            justify-content:space-betwen;
+            align-items: flex-start;
+            "></textarea>
+            
+        </div>
+
+        <div class="button-bar" style="height: 100%;align-items: baseline; display: flex;flex-direction: row;
+        ">
+        	<button style="color:#444; padding: 0px;" class="button button button-icon icon ion-camera"></button>
+
+            <button style="color:#444; padding: 0px;" class="button button button-icon icon ion-android-attach"></button>
+
+            <button style="color:#444;  padding: 0px;" class="button button button-icon icon ion-android-microphone"></button>
+
+            <button style="color:#444;  padding: 0px;" class="button button-positive button-icon icon ion-android-send"></button>
+        </div>
+    </ion-footer>
+</ion-view>
